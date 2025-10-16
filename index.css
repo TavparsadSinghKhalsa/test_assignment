@@ -1,0 +1,160 @@
+/* === General Reset & Base Styles === */
+body {
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    scroll-behavior: smooth;
+}
+
+/* === Navbar Styling === */
+.navbar {
+    background-color: var(--bs-dark);
+    padding: 1rem 0;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand.logo {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--bs-primary);
+}
+
+.navbar-brand.logo .logo-less,
+.navbar-brand.logo .logo-slash,
+.navbar-brand.logo .logo-greater {
+    color: var(--bs-primary);
+}
+
+.nav-link {
+    color: var(--bs-light);
+    transition: color 0.2s;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--bs-primary);
+}
+
+/* === Hero Section === */
+.hero-section {
+    background: linear-gradient(to right, #0d6efd, #6610f2);
+    color: #fff;
+    padding: 5rem 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* === Fade-in Animation === */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+
+.fade-in-section.visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* === Feature Cards === */
+.feature-card {
+    border: none;
+    border-radius: 12px;
+    background-color: var(--bs-secondary-bg);
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+}
+
+.feature-icon i {
+    font-size: 2.5rem;
+    color: var(--bs-primary);
+}
+
+/* === About Section === */
+#about i {
+    color: var(--bs-primary);
+    margin-top: 1rem;
+}
+
+/* === CTA Section === */
+.cta-section {
+    background-color: var(--bs-primary);
+    color: white;
+    border-radius: 8px;
+    margin: 3rem 0;
+}
+
+.cta-section .btn-light {
+    font-weight: 600;
+}
+
+/* === Footer === */
+footer {
+    background-color: var(--bs-dark);
+    color: var(--bs-light);
+    border-top: 1px solid #444;
+}
+
+/* === Modal Customization === */
+.modal-content {
+    border-radius: 1rem;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-body form .form-control {
+    border-radius: 0.5rem;
+    background-color: var(--bs-secondary-bg);
+    color: var(--bs-body-color);
+}
+
+.modal-body .btn-primary {
+    background-color: var(--bs-primary);
+    border: none;
+}
+
+.modal-body .btn-primary:hover {
+    background-color: #0b5ed7;
+}
+
+/* === Theme Toggle Icon Styling === */
+.theme-icon-sun,
+.theme-icon-moon {
+    display: inline-block;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* === Responsive Typography === */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.25rem;
+    }
+    .feature-icon i {
+        font-size: 2rem;
+    }
+}
+
+/* === Utility Link Hover === */
+a.feature-card-link {
+    text-decoration: none;
+    color: inherit;
+}
